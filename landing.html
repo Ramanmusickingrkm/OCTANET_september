@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en"> 
+ <head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Landing Page</title> 
+  <link rel="stylesheet" href="styles.css"> 
+ <style type="text/css" id="dcoder_stylesheet">/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styles for the body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: gray;
+}
+
+/* Header styles */
+header {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* Section styles */
+.section {
+    padding: 50px;
+    text-align: center;
+}
+
+/* Hero section styles */
+.hero {
+    background-image: url('hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+/* Services section styles */
+.services {
+    background-color: black;;
+}
+
+.services h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.service {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.service:hover {
+    transform: translateY(-5px);
+}
+
+.service img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Contact section styles */
+.contact {
+    background-image: url('contact-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+
+.contact h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+/* Button styles */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: #333;
+    color: white;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #555;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}</style></head> 
+ <body> 
+  <header> 
+   <nav> 
+    <ul> 
+     <li><a href="#section1">Home</a></li> 
+     <li><a href="#section2">Services</a></li> 
+     <li><a href="#section3">Contact</a></li> 
+    </ul> 
+   </nav> 
+  </header> 
+  <section id="section1" class="section hero"> 
+   <div class="hero-content"> 
+    <h1>Welcome to Our Website</h1> 
+    <p>Your journey starts here.</p> <a href="#section2" class="btn btn-primary">Explore Services</a> 
+   </div> 
+  </section> 
+  <section id="section2" class="section services"> 
+   <h2>Our Services</h2> 
+   <div class="service"> 
+    <img src="/storage/emulated/0/Download/Pic.png" alt="Service 1"> 
+    <h3>Service 1</h3> 
+    <p> Website Development</p> 
+   </div> 
+   <div class="service"> 
+    <img src="service2.jpg" alt="Service 2"> 
+    <h3>Service 2</h3> 
+    <p>Cyber Security</p> 
+   </div> 
+  </section> 
+  <section id="section3" class="section contact"> 
+   <div class="contact-form"> 
+    <h2>Contact Us</h2> 
+    <p>Have questions? Drop us a message.</p> 
+    <form> 
+     <div class="form-group"> <label for="name">Name:</label> 
+      <input type="text" id="name" name="name" required> 
+     </div> 
+     <div class="form-group"> <label for="email">Email:</label> 
+      <input type="email" id="email" name="email" required> 
+     </div> 
+     <div class="form-group"> <label for="message">Message:</label> <textarea id="message" name="message" required></textarea> 
+     </div> <button type="submit" class="btn btn-primary">Submit</button> 
+    </form> 
+   </div> 
+  </section> 
+  <footer> 
+   <p>© 2023 Raman Kumar</p> 
+  </footer> 
+ 
+</body></html>
